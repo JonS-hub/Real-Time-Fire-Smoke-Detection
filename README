@@ -5,43 +5,41 @@
 
 ## 1. Project Overview / Proje Hakkında
 
-**EN:** This project is an advanced computer vision application that detects fire and smoke in real-time using **YOLOv8** and **OpenCV**. It features a dynamic dashboard to monitor intensity levels through live-streamed graphs.
+**EN:** This project is an advanced computer vision application that detects fire and smoke in real-time using **YOLOv8** and **OpenCV**.
 
-**TR:** Bu proje, **YOLOv8** ve **OpenCV** kullanarak gerçek zamanlı yangın ve duman tespiti yapan gelişmiş bir bilgisayarlı görü uygulamasıdır. Şiddet seviyelerini canlı grafiklerle izlemek için dinamik bir panel içerir.
+**TR:** Bu proje, **YOLOv8** ve **OpenCV** kullanarak gerçek zamanlı yangın ve duman tespiti yapan gelişmiş bir bilgisayarlı görü uygulamasıdır.
 
-![Detection Preview](https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f" width="100%" alt="Fire Detection Preview">
+</p>
 
 ---
 
 ## 2. Key Features / Temel Özellikler
 
-* **Real-Time Detection (Gerçek Zamanlı Tespit):** High-speed inference with YOLOv8.
-* **Dynamic Analytics Panel (Dinamik Analiz Paneli):** Side panel displaying intensity trends for the last 100 frames.
-* **In-Frame Intensity (Kare İçi Şiddet Bilgisi):** Displays detection confidence specifically at the bottom of each smoke bounding box.
-* **Color Coded Alerts (Renk Kodlu Uyarılar):** Red for fire, Cyan for smoke.
+* **Real-Time Detection:** High-speed inference with YOLOv8.
+* **Dynamic Analytics Panel:** Side panel displaying intensity trends.
+* **In-Frame Intensity:** Displays confidence levels for each box.
 
-![Analytics Panel](https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f" width="100%" alt="Analytics Panel Preview">
+</p>
 
 ---
 
 ## 3. Technical Stack / Teknik Altyapı
 
-| Component | Technology |
-| :--- | :--- |
-| **Language** | Python 3.x |
-| **AI Model** | YOLOv8 (Ultralytics) |
-| **Graphics & UI** | OpenCV & NumPy |
-| **Data Handling** | Deque (Collections) |
+* **AI Model:** YOLOv8
+* **Library:** OpenCV, NumPy, Ultralytics
+* **Language:** Python 3.x
 
 ---
 
 ## 4. How to Run / Nasıl Çalıştırılır
 
-Aşağıdaki komutları terminalinizde sırasıyla çalıştırarak projeyi başlatabilirsiniz:
-
 ```bash
-# 1. Install dependencies / Bağımlılıkları yükleyin
+# Bağımlılıkları yükleyin
 pip install ultralytics opencv-python numpy
 
-# 2. Run the script / Betiği çalıştırın
+# Betiği çalıştırın
 python fire_detection_main.py
