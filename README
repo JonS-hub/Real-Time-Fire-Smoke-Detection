@@ -1,45 +1,41 @@
-# 🛡️ Real-Time Fire & Smoke Detection System 
-### Gerçek Zamanlı Yangın ve Duman Tespit Sistemi
+🛡️ Real-Time Fire & Smoke Detection System / Gerçek Zamanlı Yangın ve Duman Tespit Sistemi
 
----
+1. Project Overview / Proje Hakkında
 
-## 1. Project Overview / Proje Hakkında
+EN: This project is an advanced computer vision application that detects fire and smoke in real-time using YOLOv8 and OpenCV. It features a dynamic dashboard to monitor intensity levels through live-streamed graphs. 
+TR: Bu proje, YOLOv8 ve OpenCV kullanarak gerçek zamanlı yangın ve duman tespiti yapan gelişmiş bir bilgisayarlı görü uygulamasıdır. Şiddet seviyelerini canlı grafiklerle izlemek için dinamik bir panel içerir.
 
-**EN:** This project is an advanced computer vision application that detects fire and smoke in real-time using **YOLOv8** and **OpenCV**.
 
-**TR:** Bu proje, **YOLOv8** ve **OpenCV** kullanarak gerçek zamanlı yangın ve duman tespiti yapan gelişmiş bir bilgisayarlı görü uygulamasıdır.
+![No-Detection](https://github.com/JonS-hub/Real-Time-Fire-Smoke-Detection/issues/1#issue-3831275147)
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f" width="100%" alt="Fire Detection Preview">
-</p>
 
----
+2. Key Features / Temel Özellikler
 
-## 2. Key Features / Temel Özellikler
+*Real-Time Detection (TR: Gerçek Zamanlı Tespit): High-speed inference with YOLOv8.
+*Dynamic Analytics Panel (TR: Dinamik Analiz Paneli): Side panel displaying intensity trends for the last 100 frames.
+*In-Frame Intensity (TR: Kare İçi Şiddet Bilgisi): Displays detection confidence specifically at the bottom of each smoke bounding box.
+*Color Coded Alerts (TR: Renk Kodlu Uyarılar): Red for fire, Cyan for smoke.
 
-* **Real-Time Detection:** High-speed inference with YOLOv8.
-* **Dynamic Analytics Panel:** Side panel displaying intensity trends.
-* **In-Frame Intensity:** Displays confidence levels for each box.
+![Detection](https://github.com/JonS-hub/Real-Time-Fire-Smoke-Detection/issues/2#issue-3831276615)
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/13566488-eebc-46cc-b09d-96faeb92b54f" width="100%" alt="Analytics Panel Preview">
-</p>
-
----
 
 ## 3. Technical Stack / Teknik Altyapı
 
-* **AI Model:** YOLOv8
-* **Library:** OpenCV, NumPy, Ultralytics
-* **Language:** Python 3.x
+| Component | Technology |
+| :--- | :--- |
+| **Language** | Python 3.x |
+| **AI Model** | YOLOv8 (Ultralytics) |
+| **Graphics & UI** | OpenCV & NumPy |
+| **Data Handling** | Deque (Collections) |
 
----
+4. How to Run / Nasıl Çalıştırılır
 
-## 4. How to Run / Nasıl Çalıştırılır
+Bash
+# Install dependencies / Bağımlılıkları yükleyin
+pip install ultralytics, opencv-python ,numpy,deque
+# Run the script / Betiği çalıştırın
+python fire_detection_main.py#
 
-```bash
-# Bağımlılıkları yükleyin
-pip install ultralytics opencv-python numpy
+****************************************
 
-# Betiği çalıştırın
-python fire_detection_main.py
+Real-Time-Fire-Smoke-Detection
